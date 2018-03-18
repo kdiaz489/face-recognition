@@ -33,7 +33,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 
-app.get('/', (req, res)=> { res.send(database.users) })
+app.get('/', (req, res)=> { res.send(res.send('it is working!')) })
 
 //FOR SIGNING IN USERS
 app.post('/signin', (req, res) =>{signin.handleSignin(req,res,db,bcrypt)});
